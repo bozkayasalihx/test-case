@@ -1,15 +1,7 @@
-const { Sequelize } = require("sequelize");
-
-const sequlize = new Sequelize({
-    database: "test",
-    username: "google",
-    password: "google",
-    dialect: "mysql",
-});
+const sequlize = require("./db");
 
 const main = async () => {
-    const test = await sequlize.authenticate();
-    console.log("test", test);
+    await sequlize.authenticate();
 };
 
 main().catch(err => console.log("err", err));
