@@ -1,13 +1,22 @@
 {
-  "name": "ebook-api",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "dependencies": {
-    "sequelize": "^6.21.3"
-  },
-  "devDependencies": {
-    "dotenv": "^16.0.1",
-    "mysql2": "^2.3.3"
-  }
+    "name": "ebook-api",
+    "version": "1.0.0",
+    "main": "./src/app.js",
+    "license": "MIT",
+    "dependencies": {
+        "argon2": "^0.28.7",
+        "axios": "^0.27.2",
+        "express": "^4.18.1",
+        "http-status": "^1.5.2",
+        "ioredis": "^5.2.2",
+        "jsonwebtoken": "^8.5.1",
+        "sequelize": "^6.21.3"
+    },
+    "devDependencies": {
+        "dotenv": "^16.0.1",
+        "mysql2": "^2.3.3"
+    },
+    "scripts": {
+        "dev": "nodemon ./src/app.js"
+    }
 }
