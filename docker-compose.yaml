@@ -18,5 +18,16 @@ services:
     volumes:
       - mysql_data:/var/lib/mysql
 
+  cache:
+    image: redis:7-alpine
+    restart: always
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    volumes:
+      - redis-data:/data
+    ports:
+      - "6379:6379"
+
 volumes:
   mysql_data: {}
+  redis-data: {}
