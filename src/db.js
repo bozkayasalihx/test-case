@@ -11,7 +11,7 @@ const sequlize = new Sequelize({
 });
 
 
-const models = [require("./models/Bookmarks"), require("./models/user")];
+const models = [require("./models/Bookmark"), require("./models/user")];
 
 for (const model of models) {
     model(sequlize);
