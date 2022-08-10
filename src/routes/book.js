@@ -53,7 +53,7 @@ async function createBookmark(req, res) {
     }
 
     const bookmark = await sequlize.models.bookmark.create({
-        book_id: bookId,
+        book_id: book_id,
         user_id: user.id,
     });
 

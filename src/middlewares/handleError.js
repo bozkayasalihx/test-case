@@ -17,7 +17,6 @@ function makeSureAsyncError(handler) {
             await handler(req, res);
         } catch (error) {
             next(error);
-            console.log('err',error);
             if (error?.original?.code === constants.ER_DUP_ENTRY) {
                 return res.status(httpStatus.BAD_REQUEST).json({
                     message: "already taken",

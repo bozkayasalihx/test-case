@@ -1,4 +1,4 @@
-require("dotenv").config();
+require("../utils/envLoader");
 const { Router } = require("express");
 const httpStatus = require("http-status");
 const sequlize = require("../db");
