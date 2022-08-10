@@ -13,7 +13,7 @@
 - [@bozkayasalihx](https://github.com/bozkayasalihx)
 
 
-## Deployment
+## Installation
 
 to install all dependecy,
 
